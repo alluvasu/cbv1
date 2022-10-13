@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{%extends "cbsa1/index.html"%}
+{% block body_block %}
+  <h1>books our own template  information</h1>
+  {% for book in list_of_books %}
+  <ul>
+  <li>book title:{{book.title}}</li>
+  <li>book name:{{book.name}}</li>
+  <li>book pages:{{book.pages}}</li>
+  </ul>
+  {%endfor%}
+{%endblock%}
