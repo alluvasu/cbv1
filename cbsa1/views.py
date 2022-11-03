@@ -11,5 +11,9 @@ class BookList(ListView):
 class BookDetails(DetailView):
     model=Book
     template_name="cbsa1/book_details.html"
+    
+class BookView(DetailView):
+    model=Book
+    
 
 # Create your views here.
